@@ -1,0 +1,16 @@
+current directory: /var/task/vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8/ext/unf_ext
+/var/lang/bin/ruby -I /var/lang/lib/ruby/site_ruby/2.7.0 -r ./siteconf20211102-1-1k20beo.rb extconf.rb
+checking for -lstdc++... yes
+creating Makefile
+
+current directory: /var/task/vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8/ext/unf_ext
+make DESTDIR\= clean
+
+current directory: /var/task/vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8/ext/unf_ext
+make DESTDIR\=
+compiling unf.cc
+linking shared-object unf_ext.so
+
+current directory: /var/task/vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8/ext/unf_ext
+make DESTDIR\= install
+/usr/bin//install -c -m 0755 unf_ext.so ./.gem.20211102-1-7ce391

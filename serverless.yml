@@ -1,0 +1,22 @@
+service: ruby-cep # nome da nossa função lambda
+
+provider:
+  name: aws # onde vamos fazer o deploy
+  runtime: ruby2.7 # linguagem que vamos utilizar
+
+plugins:
+  - serverless-ruby-package # plugin para empacotamento de dependencias
+
+package: # o que queremos que seja enviado para o AWS Lambda
+  include: # tudo que precisamos para que função funcione
+    - handler.rb
+    - vendor/**
+
+functions: # podemos definir várias funções em uma configuração só
+  api: # vamos definir apenas nosso endpoint api para ceps
+    handler: handler.handler # onde está nossa função
+    events: # eventos no qual ela será disparada
+      - http: # chamando via http
+          path: /{cep} # caminho e o parâmetro cep
+          method: get
+          cors: true # habilita chamada de todas as origens 

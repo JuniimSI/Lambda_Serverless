@@ -1,0 +1,6 @@
+current directory: /home/junior/Pessoal/lambda_serverless/vendor/bundle/ruby/2.6.0/gems/http-parser-1.2.3/ext
+/home/junior/.asdf/installs/ruby/2.6.3/bin/ruby -rrubygems /home/junior/Pessoal/lambda_serverless/vendor/bundle/ruby/2.6.0/gems/rake-13.0.6/exe/rake RUBYARCHDIR\=/home/junior/Pessoal/lambda_serverless/vendor/bundle/ruby/2.6.0/extensions/x86_64-linux/2.6.0/http-parser-1.2.3 RUBYLIBDIR\=/home/junior/Pessoal/lambda_serverless/vendor/bundle/ruby/2.6.0/extensions/x86_64-linux/2.6.0/http-parser-1.2.3
+mkdir -p x86_64-linux/http-parser
+gcc -fexceptions -O -fno-omit-frame-pointer -fno-strict-aliasing -Wall -Wextra -O3 -fPIC   -o x86_64-linux/http-parser/http_parser.o -c ./http-parser/http_parser.c
+/home/junior/Pessoal/lambda_serverless/vendor/bundle/ruby/2.6.0/gems/rake-13.0.6/lib/rake/file_utils.rb:54: warning: Insecure world writable dir /mnt/c/Program Files (x86)/Microsoft SDKs/Azure/CLI2/wbin in PATH, mode 040777
+gcc -shared -o x86_64-linux/libhttp-parser-ext.so x86_64-linux/http-parser/http_parser.o -fexceptions 
