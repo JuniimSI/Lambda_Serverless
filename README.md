@@ -7,3 +7,15 @@ App simples com intuito de desenvolver habilidades com o serverless juntamente c
 - URL de acesso : https://m3g050cucd.execute-api.us-east-1.amazonaws.com/dev/{cep}
 
 Exemplo de cep: https://m3g050cucd.execute-api.us-east-1.amazonaws.com/dev/63800-000
+
+```// https://m3g050cucd.execute-api.us-east-1.amazonaws.com/dev/63800-000
+
+{
+  "neighborhood": "",
+  "zipcode": "63800000",
+  "city": "Quixeramobim",
+  "address": "",
+  "state": "CE",
+  "complement": ""
+}
+```
